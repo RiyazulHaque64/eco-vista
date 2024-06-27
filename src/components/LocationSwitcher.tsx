@@ -4,14 +4,10 @@ import { getLocationLatLongList } from "@/lib/location-info";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-type TLocationSwitcherProps = {
-  latitude: number;
-  longitude: number;
-};
-
-const LocationSwitcher = ({ latitude, longitude }: TLocationSwitcherProps) => {
+const LocationSwitcher = () => {
   const [showLocationList, setShowLocationList] = useState(false);
   const [locations, setLocations] = useState([]);
+  console.log(locations);
 
   useEffect(() => {
     async function getLocationList() {

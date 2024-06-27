@@ -15,7 +15,7 @@ const LocationInfo = async ({ latitude, longitude }: TLocationInfoProps) => {
           <h2 className="text-3xl font-bold text-white lg:text-4xl 2xl:text-[40px]">
             {locationInfo?.continent}
           </h2>
-          <LocationSwitcher latitude={latitude} longitude={longitude} />
+          <LocationSwitcher />
           {/*<div className="relative">
             <button>
               <Image
