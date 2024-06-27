@@ -10,11 +10,9 @@ export const getLocationInfo = async (lat: number, lon: number) => {
   }
 };
 
-export const getLocationLatLongList = async (locationName: string) => {
+export const getLocationLatLongList = async () => {
   try {
-    const response = await fetch(
-      `${process.env.BASE_URL}/api/location/${locationName}`
-    );
+    const response = await fetch(`${process.env.BASE_URL}/api/location}`);
     const data = response.json();
     return data;
   } catch (error: any) {
