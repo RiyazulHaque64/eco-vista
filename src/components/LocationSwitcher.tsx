@@ -2,12 +2,12 @@
 
 import { getLocationLatLongList } from "@/lib/location-info";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const LocationSwitcher = () => {
   const [showLocationList, setShowLocationList] = useState(false);
   const [locations, setLocations] = useState([]);
-  console.log(locations);
 
   useEffect(() => {
     async function getLocationList() {
@@ -33,10 +33,14 @@ const LocationSwitcher = () => {
             role="list"
             className="divide-y divide-gray-100 [&>*]:py-2 [&>li]:cursor-pointer"
           >
-            <li>Kolkata</li>
-            <li>Dhaka</li>
-            <li>London</li>
-            <li>Amsterdam</li>
+            {locations?.map((location: any) => (
+              <Link
+                key={location.location}
+                href={`/${location.location}?latitude=${location.latitude}&longitude=${location.longitude}`}
+              >
+                <li>{location?.location}</li>
+              </Link>
+            ))}
           </ul>
         </div>
       )}

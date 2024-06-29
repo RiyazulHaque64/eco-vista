@@ -6,57 +6,57 @@ export type TLocationInfo = {
 
 const data = [
   {
-    location: "New York City, USA",
+    location: "USA",
     latitude: 40.712776,
     longitude: -74.005974,
   },
   {
-    location: "Tokyo, Japan",
+    location: "Japan",
     latitude: 35.689487,
     longitude: 139.691711,
   },
   {
-    location: "Paris, France",
+    location: "France",
     latitude: 48.856613,
     longitude: 2.352222,
   },
   {
-    location: "Sydney, Australia",
+    location: "Australia",
     latitude: -33.86882,
     longitude: 151.20929,
   },
   {
-    location: "Rio de Janeiro, Brazil",
+    location: "Brazil",
     latitude: -22.906847,
     longitude: -43.172897,
   },
   {
-    location: "Cape Town, South Africa",
+    location: "South Africa",
     latitude: -33.92487,
     longitude: 18.424055,
   },
   {
-    location: "Moscow, Russia",
+    location: "Russia",
     latitude: 55.755825,
     longitude: 37.617298,
   },
   {
-    location: "Mumbai, India",
+    location: "India",
     latitude: 19.07609,
     longitude: 72.877426,
   },
   {
-    location: "Cairo, Egypt",
+    location: "Egypt",
     latitude: 30.04442,
     longitude: 31.235712,
   },
   {
-    location: "Toronto, Canada",
+    location: "Canada",
     latitude: 43.65107,
     longitude: -79.347015,
   },
   {
-    location: "Dhaka, Bangladesh",
+    location: "Bangladesh",
     latitude: 23.810331,
     longitude: 90.412521,
   },
